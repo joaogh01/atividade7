@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <button onclick="mudarValor(-1)">-</button>
+    <span id="contador">0</span>
+    <button onclick="mudarValor(1)">+</button>
+
+    <script>
+        let valor = 0;
+        function mudarValor(delta) 
+        {
+        valor += delta;
+        document.getElementById("contador").innerText = valor;
+        }
+</script>
+</body>
+</html>
